@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MauiAppCrud.DTOs"
+             
+             x:Class="MauiAppCrud.MainPage">
+
+    <Grid RowDefinitions="Auto,Auto,*" RowSpacing="15" Margin="15">
+
+        <Button Grid.Row="0" Text="Nuevo Empleado" Command="{Binding CrearCommand}"/>
+        <Label Grid.Row="1" Text="Lista de empleados" FontSize="Subtitle"/>
+
+        <ScrollView Grid.Row="2">
+
+            <CollectionView ItemsSource="{Binding ListaEmpleado}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="5" Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:EmpleadoDTO">
+                        <Border Padding="10,5" HorizontalOptions="FillAndExpand">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="5"/>
+                            </Border.StrokeShape>
+
+                            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                                  ColumnDefinitions="Auto,*"
+                                  >
+
+                                <Label Grid.Row="0" Grid.Column="0"
+                                       Text="Nombre Completo:" FontAttributes="Bold"/>
+                                <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="End"
+                                    Text="{Binding NombreCompleto}" />
+
+                                <Label Grid.Row="1" Grid.Column="0"
+                                    Text="Correo:" FontAttributes="Bold"/>
+                                <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="End"
+                                    Text="{Binding Correo}" />
+
+                                <Label Grid.Row="2" Grid.Column="0"
+                                    Text="Sueldo:" FontAttributes="Bold"/>
+                                <Label Grid.Row="2" Grid.Column="1" HorizontalOptions="End"
+                                    Text="{Binding Sueldo, StringFormat='{0:C}'}" />
+
+                                <Label Grid.Row="3" Grid.Column="0"
+                                    Text="Fecha Contrato:" FontAttributes="Bold"/>
+                                <Label Grid.Row="3" Grid.Column="1" HorizontalOptions="End"
+                                    Text="{Binding FechaContrato, StringFormat='{0:dd/MM/yyyy}'}" />
+
+                                <Label Grid.Row="4" Grid.Column="0" Padding="0,15,10,5"
+                                       Text="Editar" TextColor="Blue"
+                                       >
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                            Command="{Binding BindingContext.EditarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
+                                            CommandParameter="{Binding}"
+                                            />
+                                    </Label.GestureRecognizers>
+                                    
+                                </Label>
+                                <Label Grid.Row="4" Grid.Column="1" Padding="10,15,0,5"
+                                       Text="Eliminar" TextColor="Red" HorizontalOptions="End"
+                                       >
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                                        Command="{Binding BindingContext.EliminarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
+                                        CommandParameter="{Binding}"
+                                        />
+                                    </Label.GestureRecognizers>
+
+                                </Label>
+
+                            </Grid>
+                            
+
+
+                        </Border>
+                    </DataTemplate>
+                    
+                </CollectionView.ItemTemplate>
+                    
+                    
+                
+            </CollectionView>
+            
+            
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>

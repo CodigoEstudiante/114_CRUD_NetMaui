@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MauiAppCrud</name>
+    </assembly>
+    <members>
+        <member name="T:MauiAppCrud.DTOs.EmpleadoDTO">
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiAppCrud.DTOs.EmpleadoDTO.IdEmpleado">
+            <inheritdoc cref="F:MauiAppCrud.DTOs.EmpleadoDTO.idEmpleado"/>
+        </member>
+        <member name="P:MauiAppCrud.DTOs.EmpleadoDTO.NombreCompleto">
+            <inheritdoc cref="F:MauiAppCrud.DTOs.EmpleadoDTO.nombreCompleto"/>
+        </member>
+        <member name="P:MauiAppCrud.DTOs.EmpleadoDTO.Correo">
+            <inheritdoc cref="F:MauiAppCrud.DTOs.EmpleadoDTO.correo"/>
+        </member>
+        <member name="P:MauiAppCrud.DTOs.EmpleadoDTO.Sueldo">
+            <inheritdoc cref="F:MauiAppCrud.DTOs.EmpleadoDTO.sueldo"/>
+        </member>
+        <member name="P:MauiAppCrud.DTOs.EmpleadoDTO.FechaContrato">
+            <inheritdoc cref="F:MauiAppCrud.DTOs.EmpleadoDTO.fechaContrato"/>
+        </member>
+        <member name="T:MauiAppCrud.ViewModels.EmpleadoViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.EmpleadoViewModel.EmpleadoDto">
+            <inheritdoc cref="F:MauiAppCrud.ViewModels.EmpleadoViewModel.empleadoDto"/>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.EmpleadoViewModel.TituloPagina">
+            <inheritdoc cref="F:MauiAppCrud.ViewModels.EmpleadoViewModel.tituloPagina"/>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.EmpleadoViewModel.LoadingEsVisible">
+            <inheritdoc cref="F:MauiAppCrud.ViewModels.EmpleadoViewModel.loadingEsVisible"/>
+        </member>
+        <member name="F:MauiAppCrud.ViewModels.EmpleadoViewModel.guardarCommand">
+            <summary>The backing field for <see cref="P:MauiAppCrud.ViewModels.EmpleadoViewModel.GuardarCommand"/>.</summary>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.EmpleadoViewModel.GuardarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MauiAppCrud.ViewModels.EmpleadoViewModel.Guardar"/>.</summary>
+        </member>
+        <member name="T:MauiAppCrud.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.MainViewModel.ListaEmpleado">
+            <inheritdoc cref="F:MauiAppCrud.ViewModels.MainViewModel.listaEmpleado"/>
+        </member>
+        <member name="F:MauiAppCrud.ViewModels.MainViewModel.crearCommand">
+            <summary>The backing field for <see cref="P:MauiAppCrud.ViewModels.MainViewModel.CrearCommand"/>.</summary>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.MainViewModel.CrearCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MauiAppCrud.ViewModels.MainViewModel.Crear"/>.</summary>
+        </member>
+        <member name="F:MauiAppCrud.ViewModels.MainViewModel.editarCommand">
+            <summary>The backing field for <see cref="P:MauiAppCrud.ViewModels.MainViewModel.EditarCommand"/>.</summary>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.MainViewModel.EditarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:MauiAppCrud.ViewModels.MainViewModel.Editar(MauiAppCrud.DTOs.EmpleadoDTO)"/>.</summary>
+        </member>
+        <member name="F:MauiAppCrud.ViewModels.MainViewModel.eliminarCommand">
+            <summary>The backing field for <see cref="P:MauiAppCrud.ViewModels.MainViewModel.EliminarCommand"/>.</summary>
+        </member>
+        <member name="P:MauiAppCrud.ViewModels.MainViewModel.EliminarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:MauiAppCrud.ViewModels.MainViewModel.Eliminar(MauiAppCrud.DTOs.EmpleadoDTO)"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IdEmpleado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IdEmpleado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NombreCompleto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NombreCompleto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sueldo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sueldo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FechaContrato">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FechaContrato" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EmpleadoDto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EmpleadoDto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TituloPagina">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TituloPagina" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LoadingEsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LoadingEsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ListaEmpleado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ListaEmpleado" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IdEmpleado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IdEmpleado" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NombreCompleto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NombreCompleto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sueldo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sueldo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FechaContrato">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FechaContrato" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EmpleadoDto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EmpleadoDto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TituloPagina">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TituloPagina" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LoadingEsVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LoadingEsVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ListaEmpleado">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ListaEmpleado" generated properties.</summary>
+        </member>
+    </members>
+</doc>
